@@ -9,7 +9,7 @@ const path = require('path')
 
 const app = express()
 app.use(cors({
-    origin : "http://localhost:3000",
+    origin :  "http://23.20.155.44:8080",
     credentials : true,
     // optionsSuccessStatus: 200
 }))
