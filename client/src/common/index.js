@@ -2,7 +2,7 @@
 
 // import { upload } from "../../../backend/controller/applicationController"
 
-const backendDomin = "http://localhost:8080"
+const backendDomin =  "http://23.20.155.44:8080"
 
 const SummaryApi = {
     signUP : {
