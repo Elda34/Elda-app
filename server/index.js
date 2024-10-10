@@ -29,6 +29,10 @@ app.use((req, res, next) => {
 // });
 
 if(process.env.NODE_ENV === "production"){
+    app.use(cors({
+        origin: "http://23.20.155.44", // Use your public IP address
+        credentials: true,
+    }));
     app.use(express.static(path.join(__dirname, '../client/build')));
     // app.get('*', (req, res) => {
     //     res.sendFile(path.resolve(__dirname, '../client/build/index.html'))
